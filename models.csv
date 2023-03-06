@@ -1,0 +1,22 @@
+,name,short_name,model,study,roc_auc_train,roc_auc_valid,f1_train,f1_valid,accuracy_train,accuracy_valid,ROC_AUC,matthews_coeff,cohen_kappa,best_params
+0,XGBClassifier,XGBC,"Pipeline(steps=[('PT',
+                 ColumnTransformer(remainder='passthrough',
+                                   transformers=[('pipeline',
+                                                  Pipeline(steps=[('standardscaler',
+                                                                   StandardScaler())]),
+                                                  <sklearn.compose._column_transformer.make_column_selector object at 0x00000224C81EAEE0>),
+                                                 ('ordinalencoder',
+                                                  OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                 unknown_value=999),
+                                                  <sklearn.compose._column_transfor...
+                               importance_type=None,
+                               interaction_constraints=None,
+                               lambda=5.772323782205765,
+                               learning_rate=0.3464577803883376, max_bin=None,
+                               max_cat_threshold=None, max_cat_to_onehot=None,
+                               max_delta_step=None, max_depth=10,
+                               max_leaves=None,
+                               min_child_weight=0.3049068814015964, missing=nan,
+                               monotone_constraints=None, n_estimators=53,
+                               n_jobs=None, num_parallel_tree=None,
+                               predictor=None, ...))])",<optuna.study.study.Study object at 0x00000224C459ABB0>,0.8754017757741014,0.8692614280179198,0.7180161214083733,0.7151871007188311,0.7670702069172657,0.7641071881606765,0.8746268493806256,0.5607016116020033,0.5330964807469778,"{'XGBC__max_depth': 10, 'XGBC__n_estimators': 53, 'XGBC__subsample': 0.9349732719676106, 'XGBC__scale_pos_weight': 0.4320253777128134, 'XGBC__learning_rate': 0.3464577803883376, 'XGBC__gamma': 4.772691009949947, 'XGBC__min_child_weight': 0.3049068814015964, 'XGBC__lambda': 5.772323782205765}"
